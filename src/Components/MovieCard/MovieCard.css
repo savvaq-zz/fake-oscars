@@ -1,0 +1,31 @@
+.movie-card {
+  background-color:#121212;
+  height: 180px;
+  width: 220px;
+  font-family: roboto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-card-text {
+  color: white;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.movie-card-button {
+  background-color: #313131;
+  color: white;
+  border: none;
+  text-align: center;
+  margin: 30px 20px;
+  border-radius: 5px;
+}
+
+.movie-card-button p {
+  font-family: mulish;
+  padding: 5px;
+  font-size: 13px;
+}
