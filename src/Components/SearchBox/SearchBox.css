@@ -1,0 +1,42 @@
+.homepage-search {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.homepage-search > h2 {
+  color: #EEC747;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 7px;
+}
+
+.homepage-search-form {
+  height: 40px;
+}
+
+.homepage-search-box {
+  width: 300px;
+  border: none;
+  border-radius: 2px;
+  height: 100%;
+}
+
+.homepage-search-button {
+  color: black;
+  background-color: #EEC747;
+  border: none;
+  border-radius: 2px;
+  width: 80px;
+  margin-left: 15px;
+  height: 100%;
+  font-family: 'Mulish';
+}
+
+input {
+  font-family: 'Mulish';
+  padding-left: 10px;
+}

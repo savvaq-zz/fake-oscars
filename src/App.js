@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css'
 import MovieList from './Components/MovieList/MovieList';
-import MovieCard from './Components/MovieCard/MovieCard'
+import HomepageHeading from './Components/HomepageHeading/HomepageHeading';
+import Header from './Components/Header/Header'
+import SearchBox from './Components/SearchBox/SearchBox'
 
 const App = () => {
   const [movies, setMovies] = useState([
@@ -20,7 +22,7 @@ const App = () => {
       "Poster": "https://m.media-amazon.com/images/M/MV5BMTMxMjQ1MjA5Ml5BMl5BanBnXkFtZTcwNjIzNjg1Mw@@._V1_SX300.jpg"
     },
     {
-      "Title": "Titanic - La leggenda continua",
+      "Title": "Titanic - La",
       "Year": "2000",
       "imdbID": "tt0330994",
       "Type": "movie",
@@ -29,7 +31,12 @@ const App = () => {
   ]);
 
   return <div>
-    <MovieCard />
+    <Header />
+    <SearchBox />
+    <HomepageHeading name="Fan Favorites"/>
+    <MovieList movies={movies} />
+    <HomepageHeading name="Nominations"/>
+    <MovieList movies={movies} color="yellow" />
   </div>
 }
 
