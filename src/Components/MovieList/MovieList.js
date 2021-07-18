@@ -5,11 +5,11 @@ import MovieCard from '../MovieCard/MovieCard';
 const MovieList = (props) => {
   return (
     <>
-      {props.movies.map((movie, index) => (
         <div className="movie-cards">
-         <MovieCard title={movie.Title} year={movie.Year} color={props.color} />
+          {props.movies.map((movie, index) => (
+            <MovieCard title={movie.Title} year={movie.Year} color={props.color} img={movie.Poster} />
+            ))}
         </div>
-      ))}
     </>
   )
 }

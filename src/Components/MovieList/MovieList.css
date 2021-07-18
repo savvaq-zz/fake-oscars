@@ -1,4 +1,6 @@
 .movie-cards {
-  padding: 20px;
-  display: inline-block;
+  border: 3px solid blue;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
 }

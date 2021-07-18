@@ -1,57 +1,43 @@
-.movie-card-black {
+.movie-card {
   background-color:#121212;
-  height: 180px;
-  width: 220px;
   font-family: roboto;
+  width: 300px;
+  height: fit-content;
+  margin: 0 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  border: 1px solid red;
 }
 
-.movie-card-yellow {
-  background-color:#EEC747;
-  height: 180px;
-  width: 220px;
-  font-family: roboto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.movie-card-text-black {
+.movie-card-text {
   color: white;
   font-size: 15px;
   margin-left: 20px;
-  margin-top: 30px;
+  vertical-align: bottom;
+  border: 1px solid yellow;
 }
 
-.movie-card-text-yellow {
-  color: black;
-  font-size: 15px;
-  margin-left: 20px;
-  margin-top: 30px;
-}
-
-.movie-card-button-black {
+.movie-card-button {
   background-color: #313131;
-  color: white;
   border: none;
-  text-align: center;
-  margin: 30px 20px;
+  margin: 20px 10px;
   border-radius: 5px;
+  height: 30px;
+  padding: 0px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.movie-card-button-yellow {
-  background-color: white;
-  color: black;
-  border: none;
-  text-align: center;
-  margin: 30px 20px;
-  border-radius: 5px;
+.movie-card-button > span {
+  color: rgb(96, 96, 248);
 }
 
-.movie-card-button p {
-  font-family: mulish;
-  padding: 5px;
-  font-size: 13px;
+.movie-card-img {
+  float:left;
+}
+
+a {
+  text-decoration: none;
 }

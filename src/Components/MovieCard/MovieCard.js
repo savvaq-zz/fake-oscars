@@ -2,24 +2,22 @@ import React from 'react'
 import './MovieCard.css'
 
 const MovieCard = (props) => {
-  let className = 'black'
-  if (props.color === "yellow") {
-    className = 'yellow'
-  }
 
   return (
-    <div className={`movie-card-${className}`}>
-      <div className="movie-card-body">      
-        <div className={`movie-card-text-${className}`}>
+    <div className="movie-card">
+        <img src={props.img} alt="poster" className="movie-card-img" />
+        <div className="movie-card-text">
           <h2>{props.title}</h2>
           <p>Year: {props.year}</p>
+          <a href="#">
+            <div className="movie-card-button">
+              <span>Nominate</span>
+            </div>
+          </a>
         </div>
-        <div class={`movie-card-button-${className}`}>
-          <p>Add to Nominations</p>
-        </div>
-      </div>  
     </div>
   )
+  
 }
 
 export default MovieCard;
