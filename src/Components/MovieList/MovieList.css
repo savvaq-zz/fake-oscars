@@ -1,11 +1,8 @@
 .movie-cards {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 5px; */
   overflow-x: scroll;
   display: flex;
 }
 
 .movie-cards::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
+  display: none;
 }

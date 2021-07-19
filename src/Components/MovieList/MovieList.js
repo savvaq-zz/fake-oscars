@@ -1,5 +1,5 @@
 import React from 'react';
-import './MovieList.css'
+import './MovieList.css';
 import MovieCard from '../MovieCard/MovieCard';
 
 const MovieList = (props) => {
@@ -7,7 +7,7 @@ const MovieList = (props) => {
     <>
         <div className="movie-cards">
           {props.movies.map((movie, index) => (
-            <MovieCard title={movie.Title} year={movie.Year} color={props.color} img={movie.Poster} />
+            <MovieCard title={movie.Title} year={movie.Year} img={movie.Poster} click={props.handleNominationClick}/>
             ))}
         </div>
     </>

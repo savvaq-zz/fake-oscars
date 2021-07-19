@@ -10,7 +10,7 @@ const MovieCard = (props) => {
           <h2>{props.title}</h2>
           <p>Year: {props.year}</p>
         </div>
-        <button className="movie-card-button"><span>Nominate</span></button>
+        <a onClick={props.click} className="movie-card-button"><span>Nominate</span></a>
     </div>
   )
   

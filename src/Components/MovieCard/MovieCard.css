@@ -29,6 +29,7 @@
 
 .movie-card-button > span {
   color: rgb(96, 96, 248);
+  font-size: 14px;
 }
 
 .movie-card-img {
