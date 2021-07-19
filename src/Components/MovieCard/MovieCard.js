@@ -9,12 +9,8 @@ const MovieCard = (props) => {
         <div className="movie-card-text">
           <h2>{props.title}</h2>
           <p>Year: {props.year}</p>
-          <a href="#">
-            <div className="movie-card-button">
-              <span>Nominate</span>
-            </div>
-          </a>
         </div>
+        <button className="movie-card-button"><span>Nominate</span></button>
     </div>
   )
   

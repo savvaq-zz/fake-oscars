@@ -1,26 +1,23 @@
 .movie-card {
   background-color:#121212;
   font-family: roboto;
-  width: 300px;
-  height: fit-content;
-  margin: 0 5px;
+  width: 200px;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  margin: 0 10px;
 }
 
 .movie-card-text {
   color: white;
-  font-size: 15px;
+  font-size: 13px;
   margin-left: 20px;
   vertical-align: bottom;
-  border: 1px solid yellow;
 }
 
 .movie-card-button {
   background-color: #313131;
   border: none;
-  margin: 20px 10px;
+  margin: 20px 15px;
   border-radius: 5px;
   height: 30px;
   padding: 0px;
@@ -36,6 +33,7 @@
 
 .movie-card-img {
   float:left;
+  height: 300px;
 }
 
 a {
