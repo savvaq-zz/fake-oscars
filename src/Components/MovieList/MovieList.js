@@ -7,7 +7,13 @@ const MovieList = (props) => {
     <>
         <div className="movie-cards">
           {props.movies.map((movie, index) => (
-            <MovieCard title={movie.Title} year={movie.Year} img={movie.Poster} click={props.handleNominationClick}/>
+            <MovieCard title={movie.Title} 
+            year={movie.Year} 
+            img={movie.Poster} 
+            handleNominationClick={() => props.handleNominationClick(movie)}
+            handleRemoveNominationClick={() => props.handleRemoveNominationClick(movie)}
+            type={props.type}  
+             />
             ))}
         </div>
     </>

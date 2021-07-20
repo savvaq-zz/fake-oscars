@@ -66,19 +66,16 @@ const App = () => {
     },
   ]);
 
-  const [nominations, setNominations] = useState([
-    {
-      "Title": "Titanic - La",
-      "Year": "2000",
-      "imdbID": "tt0330994",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTg5MjcxODAwMV5BMl5BanBnXkFtZTcwMTk4OTMwMg@@._V1_SX300.jpg"
-    }
-    ]);
+  const [nominations, setNominations] = useState([]);
 
   const addToNominations = (nomination) => {
     const newNominationsList = [...nominations, nomination]
     setNominations(newNominationsList);
+  }
+
+  const removeNomination = (nomination) => {
+    const newNominationsList = nominations.filter(item => item !== nomination)
+    setNominations(newNominationsList); 
   }
 
   return <div>
@@ -87,7 +84,7 @@ const App = () => {
     <HomepageHeading name="Fan Favorites" />
     <MovieList movies={movies} handleNominationClick={addToNominations} />
     <HomepageHeading name="Nominations"/>
-    <MovieList movies={nominations} />
+    <MovieList movies={nominations} handleRemoveNominationClick={removeNomination} type="nomination" />
     <Footer />
   </div>
 }
