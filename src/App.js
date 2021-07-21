@@ -16,61 +16,72 @@ const App = () => {
       "Poster": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg"
     },
     {
-      "Title": "Titanic",
-      "Year": "1997",
-      "imdbID": "tt0120338",
+      "Title": "Home Alone",
+      "Year": "1990",
+      "imdbID": "tt0099785",
       "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg"
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
     },
     {
-      "Title": "Titanic II",
-      "Year": "2010",
-      "imdbID": "tt1640571",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTMxMjQ1MjA5Ml5BMl5BanBnXkFtZTcwNjIzNjg1Mw@@._V1_SX300.jpg"
-    },
-    {
-      "Title": "Titanic - La",
+      "Title": "Cast Away",
       "Year": "2000",
-      "imdbID": "tt0330994",
+      "imdbID": "tt0162222",
       "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTg5MjcxODAwMV5BMl5BanBnXkFtZTcwMTk4OTMwMg@@._V1_SX300.jpg"
+      "Poster": "https://m.media-amazon.com/images/M/MV5BN2Y5ZTU4YjctMDRmMC00MTg4LWE1M2MtMjk4MzVmOTE4YjkzXkEyXkFqcGdeQXVyNTc1NTQxODI@._V1_SX300.jpg"
     },
     {
-      "Title": "Titanic - La",
-      "Year": "2000",
-      "imdbID": "tt0330994",
+      "Title": "Saw",
+      "Year": "2004",
+      "imdbID": "tt0387564",
       "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTg5MjcxODAwMV5BMl5BanBnXkFtZTcwMTk4OTMwMg@@._V1_SX300.jpg"
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMzQ2ZTBhNmEtZDBmYi00ODU0LTgzZmQtNmMxM2M4NzM1ZjE4XkEyXkFqcGdeQXVyNjE5MjUyOTM@._V1_SX300.jpg"
     },
     {
-      "Title": "Titanic - La",
-      "Year": "2000",
-      "imdbID": "tt0330994",
+      "Title": "The Mask",
+      "Year": "1994",
+      "imdbID": "tt0110475",
       "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTg5MjcxODAwMV5BMl5BanBnXkFtZTcwMTk4OTMwMg@@._V1_SX300.jpg"
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOWExYjI5MzktNTRhNi00Nzg2LThkZmQtYWVkYjRlYWI2MDQ4XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
     },
     {
-      "Title": "Titanic - La",
-      "Year": "2000",
-      "imdbID": "tt0330994",
+      "Title": "The Matrix",
+      "Year": "1999",
+      "imdbID": "tt0133093",
       "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTg5MjcxODAwMV5BMl5BanBnXkFtZTcwMTk4OTMwMg@@._V1_SX300.jpg"
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
     },
     {
-      "Title": "Titanic - La",
-      "Year": "2000",
-      "imdbID": "tt0330994",
+      "Title": "The Green Mile",
+      "Year": "1999",
+      "imdbID": "tt0120689",
       "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTg5MjcxODAwMV5BMl5BanBnXkFtZTcwMTk4OTMwMg@@._V1_SX300.jpg"
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTUxMzQyNjA5MF5BMl5BanBnXkFtZTYwOTU2NTY3._V1_SX300.jpg"
+    },
+    {
+      "Title": "Forrest Gump",
+      "Year": "1994",
+      "imdbID": "tt0109830",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    },
+    {
+      "Title": "The Beach",
+      "Year": "2000",
+      "imdbID": "tt0163978",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNTljZTUzYWUtOTI4YS00NmZlLWE5MmQtZjFlZDZhNjg4MjQxXkEyXkFqcGdeQXVyNTc1NTQxODI@._V1_SX300.jpg"
     },
   ]);
 
   const [nominations, setNominations] = useState([]);
+  const [searchValue, setSearchValue] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
 
   const addToNominations = (nomination) => {
-    const newNominationsList = [...nominations, nomination]
-    setNominations(newNominationsList);
+    if(nominations.includes(nomination) === false) {
+      const newNominationsList = [...nominations, nomination]
+      setNominations(newNominationsList);
+    }
   }
 
   const removeNomination = (nomination) => {
@@ -78,9 +89,24 @@ const App = () => {
     setNominations(newNominationsList); 
   }
 
+  const searchMovies = async (search) => {
+    const url = `https://www.omdbapi.com/?apikey=df39bfa7&s=${search}`
+    const response = await fetch(url);
+    const responseJson = await response.json();
+    
+    if(responseJson.Search) {
+      setSearchResults(responseJson.Search)
+    }
+  }
+
+  useEffect(() => {
+    searchMovies(searchValue);
+  }, [searchValue])
+
   return <div>
     <Header />
-    <SearchBox />
+    <SearchBox search={searchValue} setSearch={setSearchValue} />
+    <MovieList movies={searchResults} handleNominationClick={addToNominations} />
     <HomepageHeading name="Fan Favorites" />
     <MovieList movies={movies} handleNominationClick={addToNominations} />
     <HomepageHeading name="Nominations"/>

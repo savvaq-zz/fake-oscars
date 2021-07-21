@@ -10,10 +10,9 @@ const MovieCard = (props) => {
     buttonName = "Remove"
     action = props.handleRemoveNominationClick
   }
-
   return (
     <div className="movie-card">
-        <img src={props.img} alt="poster" className="movie-card-img" />
+        <img src={props.img} alt="poster" className="movie-card-img" />          
         <div className="movie-card-text">
           <h2>{props.title}</h2>
           <p>Year: {props.year}</p>

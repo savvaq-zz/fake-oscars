@@ -5,26 +5,24 @@
   display: flex;
   flex-direction: column;
   margin: 0 10px;
+  justify-content: space-between;
 }
 
 .movie-card-text {
   color: white;
-  font-size: 13px;
+  font-size: 11px;
+  width: 80%;
   margin-left: 20px;
-  vertical-align: bottom;
 }
 
 .movie-card-button {
   background-color: #313131;
   border: none;
-  margin: 20px 15px;
+  margin: 10px 15px;
   border-radius: 5px;
   height: 30px;
   padding: 0px;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
 }
 
@@ -34,8 +32,8 @@
 }
 
 .movie-card-img {
-  float:left;
   height: 300px;
+  display: block;
 }
 
 a {

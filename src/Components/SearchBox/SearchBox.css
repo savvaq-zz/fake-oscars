@@ -25,16 +25,6 @@
   height: 100%;
 }
 
-.homepage-search-button {
-  color: black;
-  background-color: #EEC747;
-  border: none;
-  border-radius: 2px;
-  width: 80px;
-  margin-left: 15px;
-  height: 100%;
-  font-family: 'Mulish';
-}
 
 input {
   font-family: 'Mulish';
