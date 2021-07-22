@@ -4,12 +4,25 @@ import './MovieCard.css'
 const MovieCard = (props) => {
 
   let buttonName = "Nominate"
-  let action = props.handleNominationClick
+  let buttonType = "regular"
+  
+  const action = () => {
+    if(props.type === "favorite") {
+      props.handleNominationClick();
+      props.removeMovie();
+    } else if (props.type === "SearchResults"){
+      props.handleNominationClick();
+      props.removeSearchResult();
+    } else {
+      props.handleRemoveNominationClick();
+    }
+  }
 
   if(props.type === "nomination") {
     buttonName = "Remove"
-    action = props.handleRemoveNominationClick
+    buttonType = "clicked"
   }
+  
   return (
     <div className="movie-card">
         <img src={props.img} alt="poster" className="movie-card-img" />          
@@ -17,7 +30,7 @@ const MovieCard = (props) => {
           <h2>{props.title}</h2>
           <p>Year: {props.year}</p>
         </div>
-        <button onClick={action} className="movie-card-button">
+        <button onClick={action} className={`movie-card-button-${buttonType}`}>
           <span>{buttonName}</span>
         </button>
     </div>

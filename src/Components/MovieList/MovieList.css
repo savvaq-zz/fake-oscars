@@ -1,7 +1,6 @@
 .movie-cards {
   overflow-x: scroll;
   display: flex;
-  margin-left: 20px;
   scroll-behavior: smooth
 }
 
@@ -11,20 +10,21 @@
 
 .movie-cards-wrapper {
   position: relative;
-}
-
-.button-scroll-right {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  color: #8d8c89;
-  cursor: pointer;
+  margin-left: 20px;
 }
 
 .button-scroll-left {
   position: absolute;
-  top: 50%;
-  left: 10px;
+  top: 30%;
+  left: 0;
+  color: #8d8c89;
+  cursor: pointer;
+}
+
+.button-scroll-right {
+  position: absolute;
+  top: 30%;
+  right: 0;
   color: #8d8c89;
   cursor: pointer;
 }

@@ -1,9 +1,8 @@
 import React, { useRef } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './MovieList.css';
 import MovieCard from '../MovieCard/MovieCard';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-
+import PlaceHolderCard from '../PlaholderCard/PlaceholderCard';
 
 
 const MovieList = (props) => {
@@ -13,8 +12,11 @@ const MovieList = (props) => {
     ref.current.scrollLeft += scrollOffset;
   }
 
+  const showPlaceholder = props.movies.length === 0 && props.type !== "SearchResults"
+
   return (
     <>
+      {showPlaceholder && <PlaceHolderCard />}
       <div className="movie-cards-wrapper">
         <div className="movie-cards" ref={ref}>
           {props.movies.map((movie, index) => (
@@ -23,12 +25,14 @@ const MovieList = (props) => {
             img={movie.Poster} 
             handleNominationClick={() => props.handleNominationClick(movie)}
             handleRemoveNominationClick={() => props.handleRemoveNominationClick(movie)}
-            type={props.type}  
+            type={props.type}
+            removeSearchResult={() => props.removeSearchResult(movie)}
+            removeMovie={() => props.removeMovie(movie)}
              />
             ))}
-        </div>
-        <div className="button-scroll-left" onClick={() => scroll(-500)}><FaChevronLeft size={50} /></div>
-        <div className="button-scroll-right" onClick={() => scroll(500)}><FaChevronRight size={50} /></div>
+        </div>    
+        {props.movies.length > 0 && <div className="button-scroll-left" onClick={() => scroll(-500)}><FaChevronLeft size={50} /></div>}
+        {props.movies.length > 0 && <div className="button-scroll-right" onClick={() => scroll(500)}><FaChevronRight size={50} /></div>}
       </div>
     </>
   )

@@ -4,7 +4,7 @@
   width: 200px;
   display: flex;
   flex-direction: column;
-  margin: 0 10px;
+  margin-right: 20px;
   justify-content: space-between;
 }
 
@@ -15,7 +15,7 @@
   margin-left: 20px;
 }
 
-.movie-card-button {
+.movie-card-button-regular {
   background-color: #313131;
   border: none;
   margin: 10px 15px;
@@ -24,6 +24,19 @@
   padding: 0px;
   text-decoration: none;
   cursor: pointer;
+  color: white;
+}
+
+.movie-card-button-clicked {
+  background-color: red;
+  border: none;
+  margin: 10px 15px;
+  border-radius: 5px;
+  height: 30px;
+  padding: 0px;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
 }
 
 .movie-card-button > span {

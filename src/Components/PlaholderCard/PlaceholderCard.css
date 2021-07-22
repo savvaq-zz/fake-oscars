@@ -1,0 +1,17 @@
+.placeholder-card {
+  background-color: #121212;
+  font-family: roboto;
+  width: 200px;
+  height: 400px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.placeholder-card > p {
+  color: grey;
+  text-align: center;
+  width: 100px;
+}

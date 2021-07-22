@@ -89,6 +89,17 @@ const App = () => {
     setNominations(newNominationsList); 
   }
 
+  const removeSearchResult = (searchResult) => {
+    const newSearchResultsList = searchResults.filter(item => item !== searchResult)
+    setSearchResults(newSearchResultsList); 
+  }
+
+  const removeMovie = (movie) => {
+    const newMoviesList = movies.filter(item => item !== movie)
+    setMovies(newMoviesList); 
+  }
+
+
   const searchMovies = async (search) => {
     const url = `https://www.omdbapi.com/?apikey=df39bfa7&s=${search}`
     const response = await fetch(url);
@@ -106,9 +117,9 @@ const App = () => {
   return <div>
     <Header />
     <SearchBox search={searchValue} setSearch={setSearchValue} />
-    <MovieList movies={searchResults} handleNominationClick={addToNominations} />
+    <MovieList movies={searchResults} removeSearchResult={removeSearchResult} handleNominationClick={addToNominations} type="SearchResults" />
     <HomepageHeading name="Fan Favorites" />
-    <MovieList movies={movies} handleNominationClick={addToNominations} />
+    <MovieList movies={movies} removeMovie={removeMovie} handleNominationClick={addToNominations} type="favorite" />
     <HomepageHeading name="Nominations"/>
     <MovieList movies={nominations} handleRemoveNominationClick={removeNomination} type="nomination" />
     <Footer />
