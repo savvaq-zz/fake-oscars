@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import logo from '/Users/dima/code/savvaq/fake-oscars/src/img/logo.png'
+import logo from '../img/logo.png'
 
 const Header = () => {
 
