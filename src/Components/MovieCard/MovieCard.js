@@ -7,9 +7,9 @@ const MovieCard = (props) => {
   let buttonType = "regular"
   
   const action = () => {
-    if(props.type === "favorite") {
+    if(props.type === "Favorite") {
       props.handleNominationClick();
-      props.removeMovie();
+      props.removeFanFavorite();
     } else if (props.type === "SearchResults"){
       props.handleNominationClick();
       props.removeSearchResult();
@@ -18,7 +18,7 @@ const MovieCard = (props) => {
     }
   }
 
-  if(props.type === "nomination") {
+  if(props.type === "Nomination") {
     buttonName = "Remove"
     buttonType = "clicked"
   }

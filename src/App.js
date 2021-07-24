@@ -7,7 +7,7 @@ import SearchBox from './Components/SearchBox/SearchBox';
 import Footer from './Components/Footer/Footer';
 
 const App = () => {
-  const [movies, setMovies] = useState([
+  const [fanFavorites, setFanFavorites] = useState([
     {
       "Title": "Titanic",
       "Year": "1997",
@@ -94,9 +94,9 @@ const App = () => {
     setSearchResults(newSearchResultsList); 
   }
 
-  const removeMovie = (movie) => {
-    const newMoviesList = movies.filter(item => item !== movie)
-    setMovies(newMoviesList); 
+  const removeFanFavorite = (movie) => {
+    const newFanFavoriteList = fanFavorites.filter(item => item !== movie)
+    setFanFavorites(newFanFavoriteList); 
   }
 
 
@@ -119,9 +119,9 @@ const App = () => {
     <SearchBox search={searchValue} setSearch={setSearchValue} />
     <MovieList movies={searchResults} removeSearchResult={removeSearchResult} handleNominationClick={addToNominations} type="SearchResults" />
     <HomepageHeading name="Fan Favorites" />
-    <MovieList movies={movies} removeMovie={removeMovie} handleNominationClick={addToNominations} type="favorite" />
+    <MovieList movies={fanFavorites} removeFanFavorite={removeFanFavorite} handleNominationClick={addToNominations} type="Favorite" />
     <HomepageHeading name="Nominations"/>
-    <MovieList movies={nominations} handleRemoveNominationClick={removeNomination} type="nomination" />
+    <MovieList movies={nominations} handleRemoveNominationClick={removeNomination} type="Nomination" />
     <Footer />
   </div>
 }

@@ -27,7 +27,7 @@ const MovieList = (props) => {
             handleRemoveNominationClick={() => props.handleRemoveNominationClick(movie)}
             type={props.type}
             removeSearchResult={() => props.removeSearchResult(movie)}
-            removeMovie={() => props.removeMovie(movie)}
+            removeFanFavorite={() => props.removeFanFavorite(movie)}
              />
             ))}
         </div>    
