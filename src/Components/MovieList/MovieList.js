@@ -21,6 +21,7 @@ const MovieList = (props) => {
         <div className="movie-cards" ref={ref}>
           {props.movies.map((movie, index) => (
             <MovieCard title={movie.Title} 
+            key={movie.Title + movie.Year}
             year={movie.Year} 
             img={movie.Poster} 
             handleNominationClick={() => props.handleNominationClick(movie)}
